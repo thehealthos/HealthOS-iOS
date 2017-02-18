@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+     
+/* Begin PBXAggregateTarget section */
+        AAEE5E87CAD05D168656264B /* Framework */ = {
+            isa = PBXAggregateTarget;
+            buildConfigurationList = AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */;
+            buildPhases = (
+                AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */,
+            );
+            dependencies = (
+                AA64289540A97CFC567617A7 /* PBXTargetDependency */,
+            );
+            name = Framework;
+            productName = Framework;
+        };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+        AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+        AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+        AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA12F8206E62E7B415ACF0E1 /* UIKit.framework */; };
+        AAEC3975AAF8AA1308CB9DB7 /* libHealthOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFFB6F12C34BFAB07465B52 /* libHealthOS.a */; };
+        AA2F009821D5B379D796665A /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6FB783652324EFB3E7BA31 /* APIHelper.m */; };
+        AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1C1510C4F3D56A3A951CFD /* APIError.m */; };
+        AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCE585F7417595F3776274 /* Configuration.m */; };
+		AA76DE7CE749B64DE93433E7 /* RequestAccessTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA62CA72E25AC96B7EE4D598 /* RequestAccessTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6C4DB3E961F2D84E74D3EA /* RequestAccessTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AADD1BF18B35A4463ED8F166 /* RequestAccessTokenRequest.m */; };
+		AA36B89CE2D892D4330AB59F /* MedicinesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0926C6E1C0909F2877987F /* MedicinesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2EEDEE64E5F576B03163D7 /* MedicinesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD71C687E98A69026A249AC /* MedicinesResponse.m */; };
+		AAF0F4E26734FC2E3FAAE543 /* Constituent.h in Headers */ = {isa = PBXBuildFile; fileRef = AA51EEF6871A1BD8E4028A16 /* Constituent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB5BE34F60A19109FCB141E /* Constituent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA775F0AEF669A8A6402277C /* Constituent.m */; };
+		AA8A0229EECB23B970CBFABB /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36B3FF892F34450B3081C7 /* Schedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF5C3C5A1F8B04FFA77CA5E /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = AABA7E2C3CB1409D9B8247CD /* Schedule.m */; };
+		AA5A3D0F45578B3898668CB2 /* GenericsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA86BF11E8BD2F55104BE9C6 /* GenericsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA86CBFBED4921EF52342B74 /* GenericsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDA8E128E78C1D32E251D /* GenericsResponse.m */; };
+		AAB7C3E483E71718230F32A3 /* FoodItemsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF0C0E86A42CE07B776FC7F /* FoodItemsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1B6C228DBAB800D6AEEA6C /* FoodItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA403E458F1A71CC5E2C431F /* FoodItemsResponse.m */; };
+		AA8C21D365EFA4D744C9757B /* LabTestsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD2FAFCE33B7FCF7625B30A /* LabTestsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7E57590D49DBD068D2E025 /* LabTestsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA565C553426AE86773FC858 /* LabTestsResponse.m */; };
+		AA2E08B5BB7AC4E94BDBD0E3 /* LabTestData.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFA221EF3B8A7C5A06C4979 /* LabTestData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA87F12AB60EE28D7D22F819 /* LabTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28AD6E64D7D5E5CDC1EF3B /* LabTestData.m */; };
+		AADBD98245FABC2484AEBD04 /* DiseasesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA98D68E236BDFAFB7D3EAFD /* DiseasesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACC608B38678586420617D3 /* DiseasesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA66EDA3A34F71513EF80B88 /* DiseasesResponse.m */; };
+		AA8D72CBD281A457E038ED42 /* ExercisesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5997C44256C25D2CEC134 /* ExercisesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABCF8CEAF2CF2DBAA942D9E /* ExercisesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA681C09730E7C276DFC247E /* ExercisesResponse.m */; };
+		AA8DAEA9890B5B6BB808860F /* SearchDiseasesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9996DE05095D27C55D3777 /* SearchDiseasesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2B9A8AD05892357AA94AF9 /* SearchDiseasesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAF2BAF1D3362AFCA1BC104 /* SearchDiseasesResponse.m */; };
+		AA40B5013F05C82514AD036B /* AllDiseasesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA924F576C9AA1B582264807 /* AllDiseasesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA79662B3D5E421CC3878C82 /* AllDiseasesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC45012203403949A5F3897 /* AllDiseasesResponse.m */; };
+		AABAF130AD84BF5983E63EF4 /* MedicineInteractionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1AF2AB565479FBFD3DB911 /* MedicineInteractionsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA20158AC0CA158A408CF260 /* MedicineInteractionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB914BEE5AA26DF49F76F50 /* MedicineInteractionsResponse.m */; };
+		AA1A033A86960ABB169DB019 /* Interaction.h in Headers */ = {isa = PBXBuildFile; fileRef = AACE3F0DC6FD996C4BDCC84D /* Interaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACFC4964E236A5B45545830 /* Interaction.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F58FB29B6CE5C603067E9 /* Interaction.m */; };
+		AA6254DC6A101C731C169A88 /* Item.h in Headers */ = {isa = PBXBuildFile; fileRef = AAADAE234B28A007F5B6C66F /* Item.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0974A32B1285C4352EF008 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE37076B8B1C7BCD120B4A /* Item.m */; };
+		AA59168DA3B6D042775F81E6 /* SearchExercisesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA20F7DDC214C2DE35279CEC /* SearchExercisesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB0B262CD6E251040C46E91 /* SearchExercisesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE7172230C7714E5B953C07 /* SearchExercisesResponse.m */; };
+		AABD71E3EDFC8CDCA887B945 /* SearchExercisesResponse16.h in Headers */ = {isa = PBXBuildFile; fileRef = AA111A0B1FDF6689519D4652 /* SearchExercisesResponse16.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB4325C426845B2E5AA7588 /* SearchExercisesResponse16.m in Sources */ = {isa = PBXBuildFile; fileRef = AA457ED028C0A445A31E0B9B /* SearchExercisesResponse16.m */; };
+		AA73D7CBE34C14CC135FD709 /* AllExercisesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5F90142881896568CB4628 /* AllExercisesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3EEFA6F6AD275B68D3DE4E /* AllExercisesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FC76ED3206F4439F93E4 /* AllExercisesResponse.m */; };
+		AA376989CEF619DC22BB0799 /* AllExercisesResponse18.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4DCA1EB01E5CADCC0F5326 /* AllExercisesResponse18.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB5E94F1F3998E074A2E963 /* AllExercisesResponse18.m in Sources */ = {isa = PBXBuildFile; fileRef = AA12FB1BC00A92ADDBD421B3 /* AllExercisesResponse18.m */; };
+		AA569B36F36CF621EAB2A5B9 /* SearchFoodItemsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6AF1B94BE5057D35A55A65 /* SearchFoodItemsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADD8204A2418E975DC87F68 /* SearchFoodItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2F6599D9FACC281F20430 /* SearchFoodItemsResponse.m */; };
+		AA52FE6346442AA1A6EB8339 /* AllFoodItemsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AABF8309CF60588C03C99184 /* AllFoodItemsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3FE3059511AE0251384920 /* AllFoodItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA24F7E7D98183E659C24C5 /* AllFoodItemsResponse.m */; };
+		AAEB5BEA39926C708BF9B950 /* SearchFoodBrandsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA474DC8373353012EC221E3 /* SearchFoodBrandsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD79AD2E432A45AFEFB5707 /* SearchFoodBrandsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA54048D894BD530EE11CA7D /* SearchFoodBrandsResponse.m */; };
+		AA376E91D55DB3BFC06EECFF /* AllFoodBrandsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA466CAA98F32D0CDFAC450E /* AllFoodBrandsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8600627650A0DEA91E27C3 /* AllFoodBrandsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC9C6C0E86E609D512062F4 /* AllFoodBrandsResponse.m */; };
+		AA3AC97E81A8D31AAC426A8B /* FoodItemsByBrandResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA05466281192F37CBBE64DC /* FoodItemsByBrandResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD66B8AA48634EE2810B77A /* FoodItemsByBrandResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5E2E2BF411DBF824BCA867 /* FoodItemsByBrandResponse.m */; };
+		AA74DFE0C2FFFFFDABCB977A /* SearchFoodRestaurantsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA4C3AA8CF4A6D9FF2CA632 /* SearchFoodRestaurantsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9E5FD587271644A07A0576 /* SearchFoodRestaurantsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA840080BF328F54FD7B0C84 /* SearchFoodRestaurantsResponse.m */; };
+		AAC6D5033A0C4EE213E3D043 /* AllFoodRestaurantsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0887A2147AE70B255DBE30 /* AllFoodRestaurantsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEF4E65D952124C5BB52E8C /* AllFoodRestaurantsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFBA801D9F854D9E3AC4D3F /* AllFoodRestaurantsResponse.m */; };
+		AA9B53635BD09E52D909D723 /* FoodItemsByRestaurantResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA641B541FCAD4E23FAD9DDB /* FoodItemsByRestaurantResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABF2F89FA0B7AACDAB774D9 /* FoodItemsByRestaurantResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE53E4E543EE05B96C623F8 /* FoodItemsByRestaurantResponse.m */; };
+		AAA8A00A6FBC03F1CEF498F4 /* AllGenericsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6104C9529A20E0E4E08168 /* AllGenericsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6E2C6FD79F9CA9EF0A36C8 /* AllGenericsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0782C62B37AE641F049E13 /* AllGenericsResponse.m */; };
+		AA954C04AE2015AE2E9CCAB2 /* MedicinesByGenericResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA65A8B82A5A378536C2B9F5 /* MedicinesByGenericResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9DA8787147E5701D7AB999 /* MedicinesByGenericResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD54D6CFE706A8B71171233 /* MedicinesByGenericResponse.m */; };
+		AA635904B93FAF8C77B65815 /* SearchLabTestsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF10ED3812DDCC4197355DA /* SearchLabTestsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5B706814111AEB2712AA5C /* SearchLabTestsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AADAB2A39F4BC6EB70233F6C /* SearchLabTestsResponse.m */; };
+		AA9FB04B4621FF7810BE6800 /* AllLabTestsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB88DA5B43AD0B1E2C9E982 /* AllLabTestsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5CF92C727025C6BD6DB770 /* AllLabTestsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9023B0510170CDFA3C6E18 /* AllLabTestsResponse.m */; };
+		AA1A8309433C80F72CF13237 /* LabTestData34.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5E49451961CFF8A5EB3033 /* LabTestData34.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF80158490C2A391D5FA140 /* LabTestData34.m in Sources */ = {isa = PBXBuildFile; fileRef = AA60F07AF3B2EBEDA92F29DF /* LabTestData34.m */; };
+		AA352E33B48A7019F56314E5 /* SearchMedicinesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2061FBCB84D2AE5D09CC85 /* SearchMedicinesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA481E98078399486FE59ED4 /* SearchMedicinesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7504D43C8DD1B5BA15188 /* SearchMedicinesResponse.m */; };
+		AA6917D15D81B225AF7E0BD1 /* AllMedicinesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD3FE11C4A4BF9224F7D9A4 /* AllMedicinesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAAC2D7A8844CE83704E69B1 /* AllMedicinesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFE429529CFBB8C64F2ED21 /* AllMedicinesResponse.m */; };
+		AA85433FFF73F81250456B6A /* AlternativeMedicinesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE75EAA13AA1A7E018B33D2 /* AlternativeMedicinesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2F73A306BAFD5F6C3EBC4A /* AlternativeMedicinesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA808FAB81D69A45BA1487F5 /* AlternativeMedicinesResponse.m */; };
+		AA841E6A6F20868F551FFF5F /* SimilarMedicinesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3819C79E6286442F4A35D1 /* SimilarMedicinesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8659894DFF3558420A26FF /* SimilarMedicinesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC77963E38E4F11D1A45D31 /* SimilarMedicinesResponse.m */; };
+		AA914A78EEBF763159D279EB /* PopularUsageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA67EC9D97251B5EFB4AC58A /* PopularUsageResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5C8643CB7A663A01FA6C4D /* PopularUsageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4784EFB44A26CA6F3ADB29 /* PopularUsageResponse.m */; };
+		AA9199F3B631F493C1310F96 /* Usage.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5C3E9241A7CBAEAAE01C14 /* Usage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5C519043ABFF56BF523FAD /* Usage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6EF8603C9A1FF9032C82FC /* Usage.m */; };
+		AAB6FDA4D124B161670DA9DF /* CommonSideEffectsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AACD4A70898A39D5F909A768 /* CommonSideEffectsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3CAEE38A301B5F1F8052BD /* CommonSideEffectsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA83AD135914D5EB3659937B /* CommonSideEffectsResponse.m */; };
+		AA216F3931D9B494EBFB7AF7 /* SideEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC593C65B5EA9E48457A77F /* SideEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD014844CEB16FDEA136E2B /* SideEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A15B9DAAC8FAE96DA55E4 /* SideEffect.m */; };
+		AAF37E6F3FC19E92BC18DABB /* SearchManufacturersResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFA24B3389C3B068F2AD139 /* SearchManufacturersResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFB78F59D5848EC88641AA0 /* SearchManufacturersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7CAE47CCE820343007220A /* SearchManufacturersResponse.m */; };
+		AA5CDEE0DDF1CB02BC820CAA /* AllManufacturersResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA12ACE98B20A115BADC2652 /* AllManufacturersResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEA5FF5579C07117917BF72 /* AllManufacturersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC19876B06C92B0FD0EAB6F /* AllManufacturersResponse.m */; };
+		AA02DAA432DF3B08781482F1 /* MedicinesByManufacturerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4DEBB353FD1642AB746D46 /* MedicinesByManufacturerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAAF18D53B24553E341F17DD /* MedicinesByManufacturerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA43B6F9DFE16E11599B5D14 /* MedicinesByManufacturerResponse.m */; };
+		AAB8FC8FBEB27D57C00E55CE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4AF826B686E34D8C722F89 /* BaseController.m */; };
+		AA44B9D7E5EA2E95B3E503AC /* MedicinesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA80B9CF0007363F15AC41CC /* MedicinesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC96240A527C171AC78CF12 /* MedicinesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3198833B89C09E061DD3A6 /* MedicinesController.m */; };
+		AA439FD8CDACBB982544DBD1 /* LabTestsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8EC47E163DAB5AA01CB520 /* LabTestsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF09FAC0B3CBCF73106FB9B /* LabTestsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF52A56C0B43612F31109B3 /* LabTestsController.m */; };
+		AA6F5510F568AEA71ED07856 /* GenericsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA91AED47A7E51790A144228 /* GenericsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7E24A984BACAB54DFEC3E0 /* GenericsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA651D5F3D4063385894D8D0 /* GenericsController.m */; };
+		AAD242C675CE56EFFE2467AB /* FoodController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0D9D2A8B7667127736B682 /* FoodController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF37F13C7FD195C35D8074C /* FoodController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA54CAF671A6AF76E6A60362 /* FoodController.m */; };
+		AA9B09F1CA8B4EB652419C8D /* ExercisesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA18E23BEB5C05DAB1CD2FE6 /* ExercisesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC6CB60E04D17DDB8889C74 /* ExercisesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB4FE5461F62B68ADAC41D6 /* ExercisesController.m */; };
+		AA23930402E7FEBB7FCC3EE4 /* DrugInteractionsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6FDECE19F73635BECC38AC /* DrugInteractionsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA982AC762C804CFBD2DF347 /* DrugInteractionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2FA1988FF33EBCB5D16C92 /* DrugInteractionsController.m */; };
+		AA23EB1F07AC33A21C522722 /* DiseasesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA07A4124F419548A55F34ED /* DiseasesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACDA1C283E3BC0353877F0C /* DiseasesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA108838F95819CD063873BA /* DiseasesController.m */; };
+		AA228CE6D886C3508E0723EA /* ChatController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA19CB3635B76588EEB10816 /* ChatController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7AF6BA2F33CADC8555764E /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE17CFC2AEE1A44FEF51F46 /* ChatController.m */; };
+		AAED547B77D7E5E47A9FD5C1 /* AutocompleteController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA68EC28E292F85FC1BC64FD /* AutocompleteController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA0AC2A2761CB9661B1F4CB3 /* AutocompleteController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA159932A37C798481C12AE0 /* AutocompleteController.m */; };
+		AABBAB0E6C4F0AC7D4E3D219 /* AuthenticationController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA178318A3B9B8F8FE9BC231 /* AuthenticationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC880AF3DF56021F9200E70 /* AuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7CBB5968DE7386863E0AEA /* AuthenticationController.m */; };
+        AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFDA2A62B62D6847BB95686 /* Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */ = {isa = PBXBuildFile; fileRef = AA48BFFBF934C1B6D2406E77 /* APIError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+	
+        AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+
+        AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1173ED2E32674C48620A64 /* IHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */ = {isa = PBXBuildFile; fileRef = AA406D274803136B567B1E87 /* HttpContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AADE4B211C778689E60B2D58 /* HttpContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0E81765DC544641E6641 /* HttpContext.m */; };
+		AAC9784606712E2F510C5892 /* NSDate+extension.h in Headers */ = {isa = PBXBuildFile; fileRef = AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA0C599E7D4F200F8897AFF7 /* NSDate+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC241C706904812E6B3DBD1 /* NSDate+extension.m */; };
+        
+        AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */; };
+        AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */; };
+        AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = AA31975203C7EAF86B56F415 /* HttpMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */; };
+        AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF67FE2ADA5B77379090F09 /* HttpResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE099E73BF6EE469D4AB217 /* HttpResponse.m */; };
+        AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78889B46E63B2815E8A97C /* HttpStringResponse.m */; };
+        AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5D18C97F1ED2716A752AA8 /* BaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA940686A027FAC0683E87AE /* BaseController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+        AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = AA9E028AD27263E3C2D60210 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = AA28707B011D40DC5FCAABD7;
+            remoteInfo = HealthOS;
+        };
+        AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = AAD86B0C4A909E780CCAF44D /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = AA28707B011D40DC5FCAABD7;
+            remoteInfo = HealthOS;
+        };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+        AA6976EEF676DCB4C0327BF2 /* CopyFiles */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "include/$(PRODUCT_NAME)";
+            dstSubfolderSpec = 16;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+        
+        AAFFB6F12C34BFAB07465B52 /* libHealthOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0;  path = libHealthOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+        AA6C52504A381F7C41B67182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+        AAD0DA7640475994DA60613B /* HealthOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthOS-Prefix.pch"; sourceTree = "<group>"; };
+        AA5CAA5BE3DEB378387D5842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml;name = Info.plist; path = HealthOS/Tests/Info.plist; sourceTree = "<group>"; };
+        AA12F8206E62E7B415ACF0E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+        AA6FB783652324EFB3E7BA31 /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+        AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };		
+     
+        AA1C1510C4F3D56A3A951CFD /* APIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIError.m; sourceTree = "<group>"; };
+        AA48BFFBF934C1B6D2406E77 /* APIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIError.h; sourceTree = "<group>"; };
+        AAFCE585F7417595F3776274 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+        AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extension.h"; sourceTree = "<group>"; };
+        AAC241C706904812E6B3DBD1 /* NSDate+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extension.m"; sourceTree = "<group>"; };
+       
+        AAFDA2A62B62D6847BB95686 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		AA62CA72E25AC96B7EE4D598 /* RequestAccessTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestAccessTokenRequest.h; path = Models/RequestAccessTokenRequest.h; sourceTree = "<group>"; };
+		AADD1BF18B35A4463ED8F166 /* RequestAccessTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestAccessTokenRequest.m; path = Models/RequestAccessTokenRequest.m; sourceTree = "<group>"; };
+		AA0926C6E1C0909F2877987F /* MedicinesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicinesResponse.h; path = Models/MedicinesResponse.h; sourceTree = "<group>"; };
+		AAD71C687E98A69026A249AC /* MedicinesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicinesResponse.m; path = Models/MedicinesResponse.m; sourceTree = "<group>"; };
+		AA51EEF6871A1BD8E4028A16 /* Constituent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constituent.h; path = Models/Constituent.h; sourceTree = "<group>"; };
+		AA775F0AEF669A8A6402277C /* Constituent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constituent.m; path = Models/Constituent.m; sourceTree = "<group>"; };
+		AA36B3FF892F34450B3081C7 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Schedule.h; path = Models/Schedule.h; sourceTree = "<group>"; };
+		AABA7E2C3CB1409D9B8247CD /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Schedule.m; path = Models/Schedule.m; sourceTree = "<group>"; };
+		AA86BF11E8BD2F55104BE9C6 /* GenericsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericsResponse.h; path = Models/GenericsResponse.h; sourceTree = "<group>"; };
+		AA3DDA8E128E78C1D32E251D /* GenericsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericsResponse.m; path = Models/GenericsResponse.m; sourceTree = "<group>"; };
+		AAF0C0E86A42CE07B776FC7F /* FoodItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodItemsResponse.h; path = Models/FoodItemsResponse.h; sourceTree = "<group>"; };
+		AA403E458F1A71CC5E2C431F /* FoodItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodItemsResponse.m; path = Models/FoodItemsResponse.m; sourceTree = "<group>"; };
+		AAD2FAFCE33B7FCF7625B30A /* LabTestsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestsResponse.h; path = Models/LabTestsResponse.h; sourceTree = "<group>"; };
+		AA565C553426AE86773FC858 /* LabTestsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestsResponse.m; path = Models/LabTestsResponse.m; sourceTree = "<group>"; };
+		AAFA221EF3B8A7C5A06C4979 /* LabTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestData.h; path = Models/LabTestData.h; sourceTree = "<group>"; };
+		AA28AD6E64D7D5E5CDC1EF3B /* LabTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestData.m; path = Models/LabTestData.m; sourceTree = "<group>"; };
+		AA98D68E236BDFAFB7D3EAFD /* DiseasesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiseasesResponse.h; path = Models/DiseasesResponse.h; sourceTree = "<group>"; };
+		AA66EDA3A34F71513EF80B88 /* DiseasesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseasesResponse.m; path = Models/DiseasesResponse.m; sourceTree = "<group>"; };
+		AAD5997C44256C25D2CEC134 /* ExercisesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesResponse.h; path = Models/ExercisesResponse.h; sourceTree = "<group>"; };
+		AA681C09730E7C276DFC247E /* ExercisesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesResponse.m; path = Models/ExercisesResponse.m; sourceTree = "<group>"; };
+		AA9996DE05095D27C55D3777 /* SearchDiseasesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchDiseasesResponse.h; path = Models/SearchDiseasesResponse.h; sourceTree = "<group>"; };
+		AAAF2BAF1D3362AFCA1BC104 /* SearchDiseasesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchDiseasesResponse.m; path = Models/SearchDiseasesResponse.m; sourceTree = "<group>"; };
+		AA924F576C9AA1B582264807 /* AllDiseasesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllDiseasesResponse.h; path = Models/AllDiseasesResponse.h; sourceTree = "<group>"; };
+		AAC45012203403949A5F3897 /* AllDiseasesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllDiseasesResponse.m; path = Models/AllDiseasesResponse.m; sourceTree = "<group>"; };
+		AA1AF2AB565479FBFD3DB911 /* MedicineInteractionsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicineInteractionsResponse.h; path = Models/MedicineInteractionsResponse.h; sourceTree = "<group>"; };
+		AAB914BEE5AA26DF49F76F50 /* MedicineInteractionsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicineInteractionsResponse.m; path = Models/MedicineInteractionsResponse.m; sourceTree = "<group>"; };
+		AACE3F0DC6FD996C4BDCC84D /* Interaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interaction.h; path = Models/Interaction.h; sourceTree = "<group>"; };
+		AA1F58FB29B6CE5C603067E9 /* Interaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Interaction.m; path = Models/Interaction.m; sourceTree = "<group>"; };
+		AAADAE234B28A007F5B6C66F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
+		AAAE37076B8B1C7BCD120B4A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
+		AA20F7DDC214C2DE35279CEC /* SearchExercisesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchExercisesResponse.h; path = Models/SearchExercisesResponse.h; sourceTree = "<group>"; };
+		AAE7172230C7714E5B953C07 /* SearchExercisesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchExercisesResponse.m; path = Models/SearchExercisesResponse.m; sourceTree = "<group>"; };
+		AA111A0B1FDF6689519D4652 /* SearchExercisesResponse16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchExercisesResponse16.h; path = Models/SearchExercisesResponse16.h; sourceTree = "<group>"; };
+		AA457ED028C0A445A31E0B9B /* SearchExercisesResponse16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchExercisesResponse16.m; path = Models/SearchExercisesResponse16.m; sourceTree = "<group>"; };
+		AA5F90142881896568CB4628 /* AllExercisesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllExercisesResponse.h; path = Models/AllExercisesResponse.h; sourceTree = "<group>"; };
+		AAD2FC76ED3206F4439F93E4 /* AllExercisesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllExercisesResponse.m; path = Models/AllExercisesResponse.m; sourceTree = "<group>"; };
+		AA4DCA1EB01E5CADCC0F5326 /* AllExercisesResponse18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllExercisesResponse18.h; path = Models/AllExercisesResponse18.h; sourceTree = "<group>"; };
+		AA12FB1BC00A92ADDBD421B3 /* AllExercisesResponse18.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllExercisesResponse18.m; path = Models/AllExercisesResponse18.m; sourceTree = "<group>"; };
+		AA6AF1B94BE5057D35A55A65 /* SearchFoodItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchFoodItemsResponse.h; path = Models/SearchFoodItemsResponse.h; sourceTree = "<group>"; };
+		AAD2F6599D9FACC281F20430 /* SearchFoodItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchFoodItemsResponse.m; path = Models/SearchFoodItemsResponse.m; sourceTree = "<group>"; };
+		AABF8309CF60588C03C99184 /* AllFoodItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllFoodItemsResponse.h; path = Models/AllFoodItemsResponse.h; sourceTree = "<group>"; };
+		AAA24F7E7D98183E659C24C5 /* AllFoodItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllFoodItemsResponse.m; path = Models/AllFoodItemsResponse.m; sourceTree = "<group>"; };
+		AA474DC8373353012EC221E3 /* SearchFoodBrandsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchFoodBrandsResponse.h; path = Models/SearchFoodBrandsResponse.h; sourceTree = "<group>"; };
+		AA54048D894BD530EE11CA7D /* SearchFoodBrandsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchFoodBrandsResponse.m; path = Models/SearchFoodBrandsResponse.m; sourceTree = "<group>"; };
+		AA466CAA98F32D0CDFAC450E /* AllFoodBrandsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllFoodBrandsResponse.h; path = Models/AllFoodBrandsResponse.h; sourceTree = "<group>"; };
+		AAC9C6C0E86E609D512062F4 /* AllFoodBrandsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllFoodBrandsResponse.m; path = Models/AllFoodBrandsResponse.m; sourceTree = "<group>"; };
+		AA05466281192F37CBBE64DC /* FoodItemsByBrandResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodItemsByBrandResponse.h; path = Models/FoodItemsByBrandResponse.h; sourceTree = "<group>"; };
+		AA5E2E2BF411DBF824BCA867 /* FoodItemsByBrandResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodItemsByBrandResponse.m; path = Models/FoodItemsByBrandResponse.m; sourceTree = "<group>"; };
+		AAA4C3AA8CF4A6D9FF2CA632 /* SearchFoodRestaurantsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchFoodRestaurantsResponse.h; path = Models/SearchFoodRestaurantsResponse.h; sourceTree = "<group>"; };
+		AA840080BF328F54FD7B0C84 /* SearchFoodRestaurantsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchFoodRestaurantsResponse.m; path = Models/SearchFoodRestaurantsResponse.m; sourceTree = "<group>"; };
+		AA0887A2147AE70B255DBE30 /* AllFoodRestaurantsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllFoodRestaurantsResponse.h; path = Models/AllFoodRestaurantsResponse.h; sourceTree = "<group>"; };
+		AAFBA801D9F854D9E3AC4D3F /* AllFoodRestaurantsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllFoodRestaurantsResponse.m; path = Models/AllFoodRestaurantsResponse.m; sourceTree = "<group>"; };
+		AA641B541FCAD4E23FAD9DDB /* FoodItemsByRestaurantResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodItemsByRestaurantResponse.h; path = Models/FoodItemsByRestaurantResponse.h; sourceTree = "<group>"; };
+		AAE53E4E543EE05B96C623F8 /* FoodItemsByRestaurantResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodItemsByRestaurantResponse.m; path = Models/FoodItemsByRestaurantResponse.m; sourceTree = "<group>"; };
+		AA6104C9529A20E0E4E08168 /* AllGenericsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllGenericsResponse.h; path = Models/AllGenericsResponse.h; sourceTree = "<group>"; };
+		AA0782C62B37AE641F049E13 /* AllGenericsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllGenericsResponse.m; path = Models/AllGenericsResponse.m; sourceTree = "<group>"; };
+		AA65A8B82A5A378536C2B9F5 /* MedicinesByGenericResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicinesByGenericResponse.h; path = Models/MedicinesByGenericResponse.h; sourceTree = "<group>"; };
+		AAD54D6CFE706A8B71171233 /* MedicinesByGenericResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicinesByGenericResponse.m; path = Models/MedicinesByGenericResponse.m; sourceTree = "<group>"; };
+		AAF10ED3812DDCC4197355DA /* SearchLabTestsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchLabTestsResponse.h; path = Models/SearchLabTestsResponse.h; sourceTree = "<group>"; };
+		AADAB2A39F4BC6EB70233F6C /* SearchLabTestsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchLabTestsResponse.m; path = Models/SearchLabTestsResponse.m; sourceTree = "<group>"; };
+		AAB88DA5B43AD0B1E2C9E982 /* AllLabTestsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllLabTestsResponse.h; path = Models/AllLabTestsResponse.h; sourceTree = "<group>"; };
+		AA9023B0510170CDFA3C6E18 /* AllLabTestsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllLabTestsResponse.m; path = Models/AllLabTestsResponse.m; sourceTree = "<group>"; };
+		AA5E49451961CFF8A5EB3033 /* LabTestData34.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestData34.h; path = Models/LabTestData34.h; sourceTree = "<group>"; };
+		AA60F07AF3B2EBEDA92F29DF /* LabTestData34.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestData34.m; path = Models/LabTestData34.m; sourceTree = "<group>"; };
+		AA2061FBCB84D2AE5D09CC85 /* SearchMedicinesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchMedicinesResponse.h; path = Models/SearchMedicinesResponse.h; sourceTree = "<group>"; };
+		AAF7504D43C8DD1B5BA15188 /* SearchMedicinesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchMedicinesResponse.m; path = Models/SearchMedicinesResponse.m; sourceTree = "<group>"; };
+		AAD3FE11C4A4BF9224F7D9A4 /* AllMedicinesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllMedicinesResponse.h; path = Models/AllMedicinesResponse.h; sourceTree = "<group>"; };
+		AAFE429529CFBB8C64F2ED21 /* AllMedicinesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllMedicinesResponse.m; path = Models/AllMedicinesResponse.m; sourceTree = "<group>"; };
+		AAE75EAA13AA1A7E018B33D2 /* AlternativeMedicinesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlternativeMedicinesResponse.h; path = Models/AlternativeMedicinesResponse.h; sourceTree = "<group>"; };
+		AA808FAB81D69A45BA1487F5 /* AlternativeMedicinesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlternativeMedicinesResponse.m; path = Models/AlternativeMedicinesResponse.m; sourceTree = "<group>"; };
+		AA3819C79E6286442F4A35D1 /* SimilarMedicinesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimilarMedicinesResponse.h; path = Models/SimilarMedicinesResponse.h; sourceTree = "<group>"; };
+		AAC77963E38E4F11D1A45D31 /* SimilarMedicinesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimilarMedicinesResponse.m; path = Models/SimilarMedicinesResponse.m; sourceTree = "<group>"; };
+		AA67EC9D97251B5EFB4AC58A /* PopularUsageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopularUsageResponse.h; path = Models/PopularUsageResponse.h; sourceTree = "<group>"; };
+		AA4784EFB44A26CA6F3ADB29 /* PopularUsageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopularUsageResponse.m; path = Models/PopularUsageResponse.m; sourceTree = "<group>"; };
+		AA5C3E9241A7CBAEAAE01C14 /* Usage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Usage.h; path = Models/Usage.h; sourceTree = "<group>"; };
+		AA6EF8603C9A1FF9032C82FC /* Usage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usage.m; path = Models/Usage.m; sourceTree = "<group>"; };
+		AACD4A70898A39D5F909A768 /* CommonSideEffectsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonSideEffectsResponse.h; path = Models/CommonSideEffectsResponse.h; sourceTree = "<group>"; };
+		AA83AD135914D5EB3659937B /* CommonSideEffectsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonSideEffectsResponse.m; path = Models/CommonSideEffectsResponse.m; sourceTree = "<group>"; };
+		AAC593C65B5EA9E48457A77F /* SideEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideEffect.h; path = Models/SideEffect.h; sourceTree = "<group>"; };
+		AA1A15B9DAAC8FAE96DA55E4 /* SideEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideEffect.m; path = Models/SideEffect.m; sourceTree = "<group>"; };
+		AAFA24B3389C3B068F2AD139 /* SearchManufacturersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchManufacturersResponse.h; path = Models/SearchManufacturersResponse.h; sourceTree = "<group>"; };
+		AA7CAE47CCE820343007220A /* SearchManufacturersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchManufacturersResponse.m; path = Models/SearchManufacturersResponse.m; sourceTree = "<group>"; };
+		AA12ACE98B20A115BADC2652 /* AllManufacturersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllManufacturersResponse.h; path = Models/AllManufacturersResponse.h; sourceTree = "<group>"; };
+		AAC19876B06C92B0FD0EAB6F /* AllManufacturersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllManufacturersResponse.m; path = Models/AllManufacturersResponse.m; sourceTree = "<group>"; };
+		AA4DEBB353FD1642AB746D46 /* MedicinesByManufacturerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicinesByManufacturerResponse.h; path = Models/MedicinesByManufacturerResponse.h; sourceTree = "<group>"; };
+		AA43B6F9DFE16E11599B5D14 /* MedicinesByManufacturerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicinesByManufacturerResponse.m; path = Models/MedicinesByManufacturerResponse.m; sourceTree = "<group>"; };
+		AA4AF826B686E34D8C722F89 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Controllers/BaseController.m; sourceTree = "<group>"; };
+		AA80B9CF0007363F15AC41CC /* MedicinesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicinesController.h; path = Controllers/MedicinesController.h; sourceTree = "<group>"; };
+		AA3198833B89C09E061DD3A6 /* MedicinesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicinesController.m; path = Controllers/MedicinesController.m; sourceTree = "<group>"; };
+		AA8EC47E163DAB5AA01CB520 /* LabTestsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestsController.h; path = Controllers/LabTestsController.h; sourceTree = "<group>"; };
+		AAF52A56C0B43612F31109B3 /* LabTestsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestsController.m; path = Controllers/LabTestsController.m; sourceTree = "<group>"; };
+		AA91AED47A7E51790A144228 /* GenericsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericsController.h; path = Controllers/GenericsController.h; sourceTree = "<group>"; };
+		AA651D5F3D4063385894D8D0 /* GenericsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericsController.m; path = Controllers/GenericsController.m; sourceTree = "<group>"; };
+		AA0D9D2A8B7667127736B682 /* FoodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodController.h; path = Controllers/FoodController.h; sourceTree = "<group>"; };
+		AA54CAF671A6AF76E6A60362 /* FoodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodController.m; path = Controllers/FoodController.m; sourceTree = "<group>"; };
+		AA18E23BEB5C05DAB1CD2FE6 /* ExercisesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesController.h; path = Controllers/ExercisesController.h; sourceTree = "<group>"; };
+		AAB4FE5461F62B68ADAC41D6 /* ExercisesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesController.m; path = Controllers/ExercisesController.m; sourceTree = "<group>"; };
+		AA6FDECE19F73635BECC38AC /* DrugInteractionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugInteractionsController.h; path = Controllers/DrugInteractionsController.h; sourceTree = "<group>"; };
+		AA2FA1988FF33EBCB5D16C92 /* DrugInteractionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrugInteractionsController.m; path = Controllers/DrugInteractionsController.m; sourceTree = "<group>"; };
+		AA07A4124F419548A55F34ED /* DiseasesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiseasesController.h; path = Controllers/DiseasesController.h; sourceTree = "<group>"; };
+		AA108838F95819CD063873BA /* DiseasesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseasesController.m; path = Controllers/DiseasesController.m; sourceTree = "<group>"; };
+		AA19CB3635B76588EEB10816 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatController.h; path = Controllers/ChatController.h; sourceTree = "<group>"; };
+		AAE17CFC2AEE1A44FEF51F46 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatController.m; path = Controllers/ChatController.m; sourceTree = "<group>"; };
+		AA68EC28E292F85FC1BC64FD /* AutocompleteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutocompleteController.h; path = Controllers/AutocompleteController.h; sourceTree = "<group>"; };
+		AA159932A37C798481C12AE0 /* AutocompleteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutocompleteController.m; path = Controllers/AutocompleteController.m; sourceTree = "<group>"; };
+		AA178318A3B9B8F8FE9BC231 /* AuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthenticationController.h; path = Controllers/AuthenticationController.h; sourceTree = "<group>"; };
+		AA7CBB5968DE7386863E0AEA /* AuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthenticationController.m; path = Controllers/AuthenticationController.m; sourceTree = "<group>"; };
+
+        AA1173ED2E32674C48620A64 /* IHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IHttpClient.h; path = Http/Client/IHttpClient.h; sourceTree = "<group>"; };
+        AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnirestClient.h; path = Http/Client/UnirestClient.h; sourceTree = "<group>"; };
+        AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnirestClient.m; path = Http/Client/UnirestClient.m; sourceTree = "<group>"; };
+        AA406D274803136B567B1E87 /* HttpContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpContext.h; path = Http/Client/HttpContext.h; sourceTree = "<group>"; };
+        AAFF0E81765DC544641E6641 /* HttpContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc;name = HttpContext.m;  path = Http/Client/HttpContext.m; sourceTree = "<group>"; };
+
+        AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpBodyRequest.h; path = Http/Request/HttpBodyRequest.h; sourceTree = "<group>"; };
+        AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpBodyRequest.m; path = Http/Request/HttpBodyRequest.m; sourceTree = "<group>"; };
+        AA31975203C7EAF86B56F415 /* HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMethod.h; path = Http/Request/HttpMethod.h; sourceTree = "<group>"; };
+        AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpRequest.h; path = Http/Request/HttpRequest.h; sourceTree = "<group>"; };
+        AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpRequest.m; path = Http/Request/HttpRequest.m; sourceTree = "<group>"; };
+        AAF67FE2ADA5B77379090F09 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpResponse.h; path = Http/Response/HttpResponse.h; sourceTree = "<group>"; };
+        AAE099E73BF6EE469D4AB217 /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpResponse.m; path = Http/Response/HttpResponse.m; sourceTree = "<group>"; };
+        AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpStringResponse.h; path = Http/Response/HttpStringResponse.h; sourceTree = "<group>"; };
+        AA78889B46E63B2815E8A97C /* HttpStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpStringResponse.m; path = Http/Response/HttpStringResponse.m; sourceTree = "<group>"; };
+        AA5D18C97F1ED2716A752AA8 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = Controllers/BaseController.h; sourceTree = "<group>"; };
+        AA940686A027FAC0683E87AE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Controllers/BaseController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        AAC01B07AF245CB0CDD170FA /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        AAFA9A16D872F6A26FA42D16 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */,
+                AAEC3975AAF8AA1308CB9DB7 /* libHealthOS.a in Frameworks */,
+                AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        AAD4984ADF584177665EB2F2 = {
+            isa = PBXGroup;
+            children = (
+                AAE5FE10AA73B8B0BF58D30E /* HealthOS */,
+                AA9EA450E464263161F6BD14 /* Frameworks */,
+                AA8858C16C1B7799495DB67C /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        AA8858C16C1B7799495DB67C /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                AAFFB6F12C34BFAB07465B52 /* libHealthOS.a */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        AA9EA450E464263161F6BD14 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                AA6C52504A381F7C41B67182 /* Foundation.framework */,
+                AA12F8206E62E7B415ACF0E1 /* UIKit.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        AAE5FE10AA73B8B0BF58D30E /* HealthOS */ = {
+            isa = PBXGroup;
+            children = (
+                AA01453D8EB8DA40D84E17AB /* Models */,
+                AAAB4E1BA682F714FFFE50E0 /* Http */,
+				AABB66C6B414A46151F694C8 /* Test Helper */,
+                AA56C8CB120D74D9FD3C57DB /* Controllers */,
+                AA15EC52DAFD549AA1AE2F7F /* Supporting Files */,
+                AA6FB783652324EFB3E7BA31 /* APIHelper.m */,
+                AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */,
+                AA1C1510C4F3D56A3A951CFD /* APIError.m */,
+                AA48BFFBF934C1B6D2406E77 /* APIError.h */,
+				AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */,
+                AAC241C706904812E6B3DBD1 /* NSDate+extension.m */,
+                AAFCE585F7417595F3776274 /* Configuration.m */,
+                AAFDA2A62B62D6847BB95686 /* Configuration.h */,
+            );
+            path = HealthOS;
+            sourceTree = "<group>";
+        };
+        AA15EC52DAFD549AA1AE2F7F /* Supporting Files */ = {
+            isa = PBXGroup;
+            children = (
+                AAD0DA7640475994DA60613B /* HealthOS-Prefix.pch */,
+            );
+            name = "Supporting Files";
+            sourceTree = "<group>";
+        };
+        AA56C8CB120D74D9FD3C57DB /* Controllers */ = {
+            isa = PBXGroup;
+            children = (
+                AA5D18C97F1ED2716A752AA8 /* BaseController.h */,
+                AA940686A027FAC0683E87AE /* BaseController.m */,
+				AA4AF826B686E34D8C722F89 /* BaseController.m */,
+				AA80B9CF0007363F15AC41CC /* MedicinesController.h */,
+				AA3198833B89C09E061DD3A6 /* MedicinesController.m */,
+				AA8EC47E163DAB5AA01CB520 /* LabTestsController.h */,
+				AAF52A56C0B43612F31109B3 /* LabTestsController.m */,
+				AA91AED47A7E51790A144228 /* GenericsController.h */,
+				AA651D5F3D4063385894D8D0 /* GenericsController.m */,
+				AA0D9D2A8B7667127736B682 /* FoodController.h */,
+				AA54CAF671A6AF76E6A60362 /* FoodController.m */,
+				AA18E23BEB5C05DAB1CD2FE6 /* ExercisesController.h */,
+				AAB4FE5461F62B68ADAC41D6 /* ExercisesController.m */,
+				AA6FDECE19F73635BECC38AC /* DrugInteractionsController.h */,
+				AA2FA1988FF33EBCB5D16C92 /* DrugInteractionsController.m */,
+				AA07A4124F419548A55F34ED /* DiseasesController.h */,
+				AA108838F95819CD063873BA /* DiseasesController.m */,
+				AA19CB3635B76588EEB10816 /* ChatController.h */,
+				AAE17CFC2AEE1A44FEF51F46 /* ChatController.m */,
+				AA68EC28E292F85FC1BC64FD /* AutocompleteController.h */,
+				AA159932A37C798481C12AE0 /* AutocompleteController.m */,
+				AA178318A3B9B8F8FE9BC231 /* AuthenticationController.h */,
+				AA7CBB5968DE7386863E0AEA /* AuthenticationController.m */,
+            );
+            name = Controllers;
+            sourceTree = "<group>";
+        };
+        AA6945303944BAD4445B8A6F /* Client */ = {
+            isa = PBXGroup;
+            children = (
+                AA1173ED2E32674C48620A64 /* IHttpClient.h */,
+                AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */,
+                AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */,
+                AA406D274803136B567B1E87 /* HttpContext.h */,
+                AAFF0E81765DC544641E6641 /* HttpContext.m */,
+            );
+            name = Client;
+            sourceTree = "<group>";
+        };
+        AABB66C6B414A46151F694C8 /* Test Helper */ = {
+            isa = PBXGroup;
+            children = (
+                AA613A713697E8E9E6AB31AB /* Request */,
+                AA6945303944BAD4445B8A6F /* Client */,
+                AAD6140F9EE3518738ACC212 /* Response */,
+            );
+            name = Http;
+            sourceTree = "<group>";
+        };
+        AA613A713697E8E9E6AB31AB /* Request */ = {
+            isa = PBXGroup;
+            children = (
+                AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */,
+                AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */,
+                AA31975203C7EAF86B56F415 /* HttpMethod.h */,
+                AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */,
+                AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */,
+            );
+            name = Request;
+            sourceTree = "<group>";
+        };
+        AAD6140F9EE3518738ACC212 /* Response */ = {
+            isa = PBXGroup;
+            children = (
+                AAF67FE2ADA5B77379090F09 /* HttpResponse.h */,
+                AAE099E73BF6EE469D4AB217 /* HttpResponse.m */,
+                AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */,
+                AA78889B46E63B2815E8A97C /* HttpStringResponse.m */,
+            );
+            name = Response;
+            sourceTree = "<group>";
+        };
+        AA01453D8EB8DA40D84E17AB /* Models */ = {
+            isa = PBXGroup;
+            children = (
+				AA62CA72E25AC96B7EE4D598 /* RequestAccessTokenRequest.h */,
+				AADD1BF18B35A4463ED8F166 /* RequestAccessTokenRequest.m */,
+				AA0926C6E1C0909F2877987F /* MedicinesResponse.h */,
+				AAD71C687E98A69026A249AC /* MedicinesResponse.m */,
+				AA51EEF6871A1BD8E4028A16 /* Constituent.h */,
+				AA775F0AEF669A8A6402277C /* Constituent.m */,
+				AA36B3FF892F34450B3081C7 /* Schedule.h */,
+				AABA7E2C3CB1409D9B8247CD /* Schedule.m */,
+				AA86BF11E8BD2F55104BE9C6 /* GenericsResponse.h */,
+				AA3DDA8E128E78C1D32E251D /* GenericsResponse.m */,
+				AAF0C0E86A42CE07B776FC7F /* FoodItemsResponse.h */,
+				AA403E458F1A71CC5E2C431F /* FoodItemsResponse.m */,
+				AAD2FAFCE33B7FCF7625B30A /* LabTestsResponse.h */,
+				AA565C553426AE86773FC858 /* LabTestsResponse.m */,
+				AAFA221EF3B8A7C5A06C4979 /* LabTestData.h */,
+				AA28AD6E64D7D5E5CDC1EF3B /* LabTestData.m */,
+				AA98D68E236BDFAFB7D3EAFD /* DiseasesResponse.h */,
+				AA66EDA3A34F71513EF80B88 /* DiseasesResponse.m */,
+				AAD5997C44256C25D2CEC134 /* ExercisesResponse.h */,
+				AA681C09730E7C276DFC247E /* ExercisesResponse.m */,
+				AA9996DE05095D27C55D3777 /* SearchDiseasesResponse.h */,
+				AAAF2BAF1D3362AFCA1BC104 /* SearchDiseasesResponse.m */,
+				AA924F576C9AA1B582264807 /* AllDiseasesResponse.h */,
+				AAC45012203403949A5F3897 /* AllDiseasesResponse.m */,
+				AA1AF2AB565479FBFD3DB911 /* MedicineInteractionsResponse.h */,
+				AAB914BEE5AA26DF49F76F50 /* MedicineInteractionsResponse.m */,
+				AACE3F0DC6FD996C4BDCC84D /* Interaction.h */,
+				AA1F58FB29B6CE5C603067E9 /* Interaction.m */,
+				AAADAE234B28A007F5B6C66F /* Item.h */,
+				AAAE37076B8B1C7BCD120B4A /* Item.m */,
+				AA20F7DDC214C2DE35279CEC /* SearchExercisesResponse.h */,
+				AAE7172230C7714E5B953C07 /* SearchExercisesResponse.m */,
+				AA111A0B1FDF6689519D4652 /* SearchExercisesResponse16.h */,
+				AA457ED028C0A445A31E0B9B /* SearchExercisesResponse16.m */,
+				AA5F90142881896568CB4628 /* AllExercisesResponse.h */,
+				AAD2FC76ED3206F4439F93E4 /* AllExercisesResponse.m */,
+				AA4DCA1EB01E5CADCC0F5326 /* AllExercisesResponse18.h */,
+				AA12FB1BC00A92ADDBD421B3 /* AllExercisesResponse18.m */,
+				AA6AF1B94BE5057D35A55A65 /* SearchFoodItemsResponse.h */,
+				AAD2F6599D9FACC281F20430 /* SearchFoodItemsResponse.m */,
+				AABF8309CF60588C03C99184 /* AllFoodItemsResponse.h */,
+				AAA24F7E7D98183E659C24C5 /* AllFoodItemsResponse.m */,
+				AA474DC8373353012EC221E3 /* SearchFoodBrandsResponse.h */,
+				AA54048D894BD530EE11CA7D /* SearchFoodBrandsResponse.m */,
+				AA466CAA98F32D0CDFAC450E /* AllFoodBrandsResponse.h */,
+				AAC9C6C0E86E609D512062F4 /* AllFoodBrandsResponse.m */,
+				AA05466281192F37CBBE64DC /* FoodItemsByBrandResponse.h */,
+				AA5E2E2BF411DBF824BCA867 /* FoodItemsByBrandResponse.m */,
+				AAA4C3AA8CF4A6D9FF2CA632 /* SearchFoodRestaurantsResponse.h */,
+				AA840080BF328F54FD7B0C84 /* SearchFoodRestaurantsResponse.m */,
+				AA0887A2147AE70B255DBE30 /* AllFoodRestaurantsResponse.h */,
+				AAFBA801D9F854D9E3AC4D3F /* AllFoodRestaurantsResponse.m */,
+				AA641B541FCAD4E23FAD9DDB /* FoodItemsByRestaurantResponse.h */,
+				AAE53E4E543EE05B96C623F8 /* FoodItemsByRestaurantResponse.m */,
+				AA6104C9529A20E0E4E08168 /* AllGenericsResponse.h */,
+				AA0782C62B37AE641F049E13 /* AllGenericsResponse.m */,
+				AA65A8B82A5A378536C2B9F5 /* MedicinesByGenericResponse.h */,
+				AAD54D6CFE706A8B71171233 /* MedicinesByGenericResponse.m */,
+				AAF10ED3812DDCC4197355DA /* SearchLabTestsResponse.h */,
+				AADAB2A39F4BC6EB70233F6C /* SearchLabTestsResponse.m */,
+				AAB88DA5B43AD0B1E2C9E982 /* AllLabTestsResponse.h */,
+				AA9023B0510170CDFA3C6E18 /* AllLabTestsResponse.m */,
+				AA5E49451961CFF8A5EB3033 /* LabTestData34.h */,
+				AA60F07AF3B2EBEDA92F29DF /* LabTestData34.m */,
+				AA2061FBCB84D2AE5D09CC85 /* SearchMedicinesResponse.h */,
+				AAF7504D43C8DD1B5BA15188 /* SearchMedicinesResponse.m */,
+				AAD3FE11C4A4BF9224F7D9A4 /* AllMedicinesResponse.h */,
+				AAFE429529CFBB8C64F2ED21 /* AllMedicinesResponse.m */,
+				AAE75EAA13AA1A7E018B33D2 /* AlternativeMedicinesResponse.h */,
+				AA808FAB81D69A45BA1487F5 /* AlternativeMedicinesResponse.m */,
+				AA3819C79E6286442F4A35D1 /* SimilarMedicinesResponse.h */,
+				AAC77963E38E4F11D1A45D31 /* SimilarMedicinesResponse.m */,
+				AA67EC9D97251B5EFB4AC58A /* PopularUsageResponse.h */,
+				AA4784EFB44A26CA6F3ADB29 /* PopularUsageResponse.m */,
+				AA5C3E9241A7CBAEAAE01C14 /* Usage.h */,
+				AA6EF8603C9A1FF9032C82FC /* Usage.m */,
+				AACD4A70898A39D5F909A768 /* CommonSideEffectsResponse.h */,
+				AA83AD135914D5EB3659937B /* CommonSideEffectsResponse.m */,
+				AAC593C65B5EA9E48457A77F /* SideEffect.h */,
+				AA1A15B9DAAC8FAE96DA55E4 /* SideEffect.m */,
+				AAFA24B3389C3B068F2AD139 /* SearchManufacturersResponse.h */,
+				AA7CAE47CCE820343007220A /* SearchManufacturersResponse.m */,
+				AA12ACE98B20A115BADC2652 /* AllManufacturersResponse.h */,
+				AAC19876B06C92B0FD0EAB6F /* AllManufacturersResponse.m */,
+				AA4DEBB353FD1642AB746D46 /* MedicinesByManufacturerResponse.h */,
+				AA43B6F9DFE16E11599B5D14 /* MedicinesByManufacturerResponse.m */,
+            );
+            name = Models;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+        AA13B6076044B4EB7050DE39 /* Headers */ = {
+            isa = PBXHeadersBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+		AA76DE7CE749B64DE93433E7 /* RequestAccessTokenRequest.h in Headers */,
+		AA36B89CE2D892D4330AB59F /* MedicinesResponse.h in Headers */,
+		AAF0F4E26734FC2E3FAAE543 /* Constituent.h in Headers */,
+		AA8A0229EECB23B970CBFABB /* Schedule.h in Headers */,
+		AA5A3D0F45578B3898668CB2 /* GenericsResponse.h in Headers */,
+		AAB7C3E483E71718230F32A3 /* FoodItemsResponse.h in Headers */,
+		AA8C21D365EFA4D744C9757B /* LabTestsResponse.h in Headers */,
+		AA2E08B5BB7AC4E94BDBD0E3 /* LabTestData.h in Headers */,
+		AADBD98245FABC2484AEBD04 /* DiseasesResponse.h in Headers */,
+		AA8D72CBD281A457E038ED42 /* ExercisesResponse.h in Headers */,
+		AA8DAEA9890B5B6BB808860F /* SearchDiseasesResponse.h in Headers */,
+		AA40B5013F05C82514AD036B /* AllDiseasesResponse.h in Headers */,
+		AABAF130AD84BF5983E63EF4 /* MedicineInteractionsResponse.h in Headers */,
+		AA1A033A86960ABB169DB019 /* Interaction.h in Headers */,
+		AA6254DC6A101C731C169A88 /* Item.h in Headers */,
+		AA59168DA3B6D042775F81E6 /* SearchExercisesResponse.h in Headers */,
+		AABD71E3EDFC8CDCA887B945 /* SearchExercisesResponse16.h in Headers */,
+		AA73D7CBE34C14CC135FD709 /* AllExercisesResponse.h in Headers */,
+		AA376989CEF619DC22BB0799 /* AllExercisesResponse18.h in Headers */,
+		AA569B36F36CF621EAB2A5B9 /* SearchFoodItemsResponse.h in Headers */,
+		AA52FE6346442AA1A6EB8339 /* AllFoodItemsResponse.h in Headers */,
+		AAEB5BEA39926C708BF9B950 /* SearchFoodBrandsResponse.h in Headers */,
+		AA376E91D55DB3BFC06EECFF /* AllFoodBrandsResponse.h in Headers */,
+		AA3AC97E81A8D31AAC426A8B /* FoodItemsByBrandResponse.h in Headers */,
+		AA74DFE0C2FFFFFDABCB977A /* SearchFoodRestaurantsResponse.h in Headers */,
+		AAC6D5033A0C4EE213E3D043 /* AllFoodRestaurantsResponse.h in Headers */,
+		AA9B53635BD09E52D909D723 /* FoodItemsByRestaurantResponse.h in Headers */,
+		AAA8A00A6FBC03F1CEF498F4 /* AllGenericsResponse.h in Headers */,
+		AA954C04AE2015AE2E9CCAB2 /* MedicinesByGenericResponse.h in Headers */,
+		AA635904B93FAF8C77B65815 /* SearchLabTestsResponse.h in Headers */,
+		AA9FB04B4621FF7810BE6800 /* AllLabTestsResponse.h in Headers */,
+		AA1A8309433C80F72CF13237 /* LabTestData34.h in Headers */,
+		AA352E33B48A7019F56314E5 /* SearchMedicinesResponse.h in Headers */,
+		AA6917D15D81B225AF7E0BD1 /* AllMedicinesResponse.h in Headers */,
+		AA85433FFF73F81250456B6A /* AlternativeMedicinesResponse.h in Headers */,
+		AA841E6A6F20868F551FFF5F /* SimilarMedicinesResponse.h in Headers */,
+		AA914A78EEBF763159D279EB /* PopularUsageResponse.h in Headers */,
+		AA9199F3B631F493C1310F96 /* Usage.h in Headers */,
+		AAB6FDA4D124B161670DA9DF /* CommonSideEffectsResponse.h in Headers */,
+		AA216F3931D9B494EBFB7AF7 /* SideEffect.h in Headers */,
+		AAF37E6F3FC19E92BC18DABB /* SearchManufacturersResponse.h in Headers */,
+		AA5CDEE0DDF1CB02BC820CAA /* AllManufacturersResponse.h in Headers */,
+		AA02DAA432DF3B08781482F1 /* MedicinesByManufacturerResponse.h in Headers */,
+		AA44B9D7E5EA2E95B3E503AC /* MedicinesController.h in Headers */,
+		AA439FD8CDACBB982544DBD1 /* LabTestsController.h in Headers */,
+		AA6F5510F568AEA71ED07856 /* GenericsController.h in Headers */,
+		AAD242C675CE56EFFE2467AB /* FoodController.h in Headers */,
+		AA9B09F1CA8B4EB652419C8D /* ExercisesController.h in Headers */,
+		AA23930402E7FEBB7FCC3EE4 /* DrugInteractionsController.h in Headers */,
+		AA23EB1F07AC33A21C522722 /* DiseasesController.h in Headers */,
+		AA228CE6D886C3508E0723EA /* ChatController.h in Headers */,
+		AAED547B77D7E5E47A9FD5C1 /* AutocompleteController.h in Headers */,
+		AABBAB0E6C4F0AC7D4E3D219 /* AuthenticationController.h in Headers */,
+        AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */,
+        AAC9784606712E2F510C5892 /* NSDate+extension.h in Headers */,
+        AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */,
+        AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */,
+        AA9E17FED3B6812D11EB1F51 /* TestHelper.h in Headers */,
+        AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */,
+        AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */,
+        AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */,
+        AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */,
+
+        AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */,
+        AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */,
+        AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */,
+        AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */,
+        AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+        AA28707B011D40DC5FCAABD7 /* HealthOS */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "HealthOS" */;
+            buildPhases = (
+                AAAD8BEDE6C04F26CD9A967F /* Sources */,
+                AAC01B07AF245CB0CDD170FA /* Frameworks */,
+                AA6976EEF676DCB4C0327BF2 /* CopyFiles */,
+                AA13B6076044B4EB7050DE39 /* Headers */,
+                AA26BF6507704A6409F338B9 /* Build Framework */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = HealthOS;
+            productName = HealthOS;
+            productReference = AAFFB6F12C34BFAB07465B52 /* libHealthOS.a */;
+            productType = "com.apple.product-type.library.static";
+        };		
+/* End PBXNativeTarget section */
+
+
+
+/* Begin PBXProject section */
+        AAD86B0C4A909E780CCAF44D /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0500;
+                ORGANIZATIONNAME = APIMatic;
+                TargetAttributes = {
+                    AA2DCD1EBC15E61EA692C99F = {
+                        CreatedOnToolsVersion = 7.3.1;
+                    };
+                };
+            };
+            buildConfigurationList = AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "HealthOS" */;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+            );
+            mainGroup = AAD4984ADF584177665EB2F2;
+            productRefGroup = AA8858C16C1B7799495DB67C /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                AA28707B011D40DC5FCAABD7 /* HealthOS */,
+                AAEE5E87CAD05D168656264B /* Framework */,
+                AA2DCD1EBC15E61EA692C99F /* Tests */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+    AAF4E93AD0B9510E6CB456B5 /* Resources */ = {
+      isa = PBXResourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+        AA26BF6507704A6409F338B9 /* Build Framework */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "Build Framework";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "#Credit: http://www.raywenderlich.com/65964/create-a-framework-for-ios\nset -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/JSONModel/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/Unirest-APIMATIC/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+        };
+        AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "MultiBuild Framework";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "# Taken from Ray Wenderlich tutorial: http://www.raywenderlich.com/65964/create-a-framework-for-ios\n\nset -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nOUTPUT_LOCATION=\"${HOME}/Desktop\"\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"${XCS_OUTPUT_DIR}\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"/tmp\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then echo \"Couldn't find anywhere to write! Dying.\"; exit 1 ; fi\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_PLATFORM is ${RW_SDK_PLATFORM}\"\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_VERSION is ${RW_SDK_VERSION}\"\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\necho \"RW_OTHER_PLATFORM is ${RW_OTHER_PLATFORM}\"\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\necho \"BUILT_PRODUCTS_DIR is ${BUILT_PRODUCTS_DIR}\"\necho \"RW_OTHER_BUILT_PRODUCTS_DIR is ${RW_OTHER_BUILT_PRODUCTS_DIR}\"\n\n# remove alias and copy, if it's archive\nUNINSTALLED_PRODUCTS_DIRECTORY=\"${BUILT_PRODUCTS_DIR}/../../IntermediateBuildFilesPath/UninstalledProducts\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+        };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        AAE0F287B400F63C88C756EB /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        AAAD8BEDE6C04F26CD9A967F /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                AA2F009821D5B379D796665A /* APIHelper.m in Sources */,
+                AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */,
+                AA0C599E7D4F200F8897AFF7 /* NSDate+extension.m in Sources */,
+                AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */,
+				AA6C4DB3E961F2D84E74D3EA /* RequestAccessTokenRequest.m in Sources */,
+				AA2EEDEE64E5F576B03163D7 /* MedicinesResponse.m in Sources */,
+				AAB5BE34F60A19109FCB141E /* Constituent.m in Sources */,
+				AAF5C3C5A1F8B04FFA77CA5E /* Schedule.m in Sources */,
+				AA86CBFBED4921EF52342B74 /* GenericsResponse.m in Sources */,
+				AA1B6C228DBAB800D6AEEA6C /* FoodItemsResponse.m in Sources */,
+				AA7E57590D49DBD068D2E025 /* LabTestsResponse.m in Sources */,
+				AA87F12AB60EE28D7D22F819 /* LabTestData.m in Sources */,
+				AACC608B38678586420617D3 /* DiseasesResponse.m in Sources */,
+				AABCF8CEAF2CF2DBAA942D9E /* ExercisesResponse.m in Sources */,
+				AA2B9A8AD05892357AA94AF9 /* SearchDiseasesResponse.m in Sources */,
+				AA79662B3D5E421CC3878C82 /* AllDiseasesResponse.m in Sources */,
+				AA20158AC0CA158A408CF260 /* MedicineInteractionsResponse.m in Sources */,
+				AACFC4964E236A5B45545830 /* Interaction.m in Sources */,
+				AA0974A32B1285C4352EF008 /* Item.m in Sources */,
+				AAB0B262CD6E251040C46E91 /* SearchExercisesResponse.m in Sources */,
+				AAB4325C426845B2E5AA7588 /* SearchExercisesResponse16.m in Sources */,
+				AA3EEFA6F6AD275B68D3DE4E /* AllExercisesResponse.m in Sources */,
+				AAB5E94F1F3998E074A2E963 /* AllExercisesResponse18.m in Sources */,
+				AADD8204A2418E975DC87F68 /* SearchFoodItemsResponse.m in Sources */,
+				AA3FE3059511AE0251384920 /* AllFoodItemsResponse.m in Sources */,
+				AAD79AD2E432A45AFEFB5707 /* SearchFoodBrandsResponse.m in Sources */,
+				AA8600627650A0DEA91E27C3 /* AllFoodBrandsResponse.m in Sources */,
+				AAD66B8AA48634EE2810B77A /* FoodItemsByBrandResponse.m in Sources */,
+				AA9E5FD587271644A07A0576 /* SearchFoodRestaurantsResponse.m in Sources */,
+				AAEF4E65D952124C5BB52E8C /* AllFoodRestaurantsResponse.m in Sources */,
+				AABF2F89FA0B7AACDAB774D9 /* FoodItemsByRestaurantResponse.m in Sources */,
+				AA6E2C6FD79F9CA9EF0A36C8 /* AllGenericsResponse.m in Sources */,
+				AA9DA8787147E5701D7AB999 /* MedicinesByGenericResponse.m in Sources */,
+				AA5B706814111AEB2712AA5C /* SearchLabTestsResponse.m in Sources */,
+				AA5CF92C727025C6BD6DB770 /* AllLabTestsResponse.m in Sources */,
+				AAF80158490C2A391D5FA140 /* LabTestData34.m in Sources */,
+				AA481E98078399486FE59ED4 /* SearchMedicinesResponse.m in Sources */,
+				AAAC2D7A8844CE83704E69B1 /* AllMedicinesResponse.m in Sources */,
+				AA2F73A306BAFD5F6C3EBC4A /* AlternativeMedicinesResponse.m in Sources */,
+				AA8659894DFF3558420A26FF /* SimilarMedicinesResponse.m in Sources */,
+				AA5C8643CB7A663A01FA6C4D /* PopularUsageResponse.m in Sources */,
+				AA5C519043ABFF56BF523FAD /* Usage.m in Sources */,
+				AA3CAEE38A301B5F1F8052BD /* CommonSideEffectsResponse.m in Sources */,
+				AAD014844CEB16FDEA136E2B /* SideEffect.m in Sources */,
+				AAFB78F59D5848EC88641AA0 /* SearchManufacturersResponse.m in Sources */,
+				AAEA5FF5579C07117917BF72 /* AllManufacturersResponse.m in Sources */,
+				AAAF18D53B24553E341F17DD /* MedicinesByManufacturerResponse.m in Sources */,
+				AAB8FC8FBEB27D57C00E55CE /* BaseController.m in Sources */,
+				AAC96240A527C171AC78CF12 /* MedicinesController.m in Sources */,
+				AAF09FAC0B3CBCF73106FB9B /* LabTestsController.m in Sources */,
+				AA7E24A984BACAB54DFEC3E0 /* GenericsController.m in Sources */,
+				AAF37F13C7FD195C35D8074C /* FoodController.m in Sources */,
+				AAC6CB60E04D17DDB8889C74 /* ExercisesController.m in Sources */,
+				AA982AC762C804CFBD2DF347 /* DrugInteractionsController.m in Sources */,
+				AACDA1C283E3BC0353877F0C /* DiseasesController.m in Sources */,
+				AA7AF6BA2F33CADC8555764E /* ChatController.m in Sources */,
+				AA0AC2A2761CB9661B1F4CB3 /* AutocompleteController.m in Sources */,
+				AAC880AF3DF56021F9200E70 /* AuthenticationController.m in Sources */,
+                 AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */,
+                 AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */,
+                 AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */,
+                 AADE4B211C778689E60B2D58 /* UnirestClient.m in Sources */,
+                 AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */,
+                 AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */,
+                 AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+        AA64289540A97CFC567617A7 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = AA28707B011D40DC5FCAABD7 /* HealthOS */;
+            targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+        };
+        AAE710D60AF9FA72F99ADA05 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = AA28707B011D40DC5FCAABD7 /* HealthOS */;
+            targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+        };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+
+        AA424ECAE71F053C848A780A /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_NAME = "$(TARGET_NAME)";
+            };
+            name = Debug;
+        };
+        AACEA0FFC440D77D3D224A1D /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_NAME = "$(TARGET_NAME)";
+            };
+            name = Release;
+        };
+        AAD9F6B0D7ABAB09FF5859BE /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+            };
+            name = Debug;
+        };
+        AA05B27B66E0C62144B5D5CC /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = YES;
+                ENABLE_NS_ASSERTIONS = NO;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+                SDKROOT = iphoneos;
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        AA297EF2FAFA3A4730512B1A /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                DEAD_CODE_STRIPPING = NO;
+                DSTROOT = /tmp/HealthOS.dst;
+                GCC_PRECOMPILE_PREFIX_HEADER = YES;
+                GCC_PREFIX_HEADER = "HealthOS/HealthOS-Prefix.pch";
+                OTHER_LDFLAGS = "$(inherited)";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+                SKIP_INSTALL = YES;
+                STRIP_INSTALLED_PRODUCT = NO;
+                STRIP_STYLE = "non-global";
+            };
+            name = Debug;
+        };
+        AA898798C13E56D992CE646A /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                COPY_PHASE_STRIP = NO;
+                DEAD_CODE_STRIPPING = NO;
+                DSTROOT = /tmp/HealthOS.dst;
+                GCC_PRECOMPILE_PREFIX_HEADER = YES;
+                GCC_PREFIX_HEADER = "HealthOS/HealthOS-Prefix.pch";
+                OTHER_LDFLAGS = "$(inherited)";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+                SKIP_INSTALL = YES;
+                STRIP_INSTALLED_PRODUCT = NO;
+                STRIP_STYLE = "non-global";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA424ECAE71F053C848A780A /* Debug */,
+                AACEA0FFC440D77D3D224A1D /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+        };
+        AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "HealthOS" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AAD9F6B0D7ABAB09FF5859BE /* Debug */,
+                AA05B27B66E0C62144B5D5CC /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "HealthOS" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                AA297EF2FAFA3A4730512B1A /* Debug */,
+                AA898798C13E56D992CE646A /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = AAD86B0C4A909E780CCAF44D /* Project object */;
+}
